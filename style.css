@@ -1,0 +1,193 @@
+/* ======================
+   Variáveis e reset
+   ====================== */
+:root{
+  --primaria: #2E7D32;   /* verde vivo */
+  --secundaria: #FFF176; /* amarelo claro */
+  --destaque: #0288D1;   /* azul */
+  --texto: #212121;
+  --fundo: #FAFAFA;
+  --branco: #ffffff;
+
+  --gap: 1rem;
+  --container-max: 1200px;
+
+  --radius: 8px;
+  --transition: 200ms ease;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: 'Roboto', system-ui, -apple-system, sans-serif;
+  color:var(--texto);
+  background:var(--fundo);
+  line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ======================
+   Helpers / utilities
+   ====================== */
+.container{
+  width:calc(100% - 2rem);
+  max-width:var(--container-max);
+  margin:0 auto;
+}
+.visually-hidden{
+  position:absolute!important;
+  height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);
+}
+
+/* Skip link */
+.skip-link{
+  position:absolute;
+  left:-9999px;
+  top:auto;
+  width:1px;height:1px;overflow:hidden;
+}
+.skip-link:focus{
+  left:1rem;top:1rem;width:auto;height:auto;padding:.5rem 1rem;background:var(--destaque);color:var(--branco);border-radius:6px;z-index:999;
+}
+
+/* Focus styles (important for a11y) */
+:focus{
+  outline: 3px solid rgba(2,136,209,0.18);
+  outline-offset: 2px;
+}
+:focus:not(:focus-visible){ outline: none; }
+
+/* ======================
+   Header / Nav
+   ====================== */
+.site-header{
+  background:var(--branco);
+  border-bottom:3px solid var(--primaria);
+  position:sticky;
+  top:0;
+  z-index:60;
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:.75rem 0;
+}
+.logo{height:44px}
+.site-nav ul{
+  list-style:none;display:flex;gap:1rem;align-items:center;
+}
+.site-nav a{
+  color:var(--texto);text-decoration:none;padding:.45rem .6rem;font-weight:600;border-radius:6px;
+}
+.site-nav a:hover,
+.site-nav a:focus{ background:rgba(46,125,50,0.06); color:var(--primaria); }
+.btn-donate{
+  background:var(--primaria);color:var(--branco);padding:.45rem .85rem;border-radius:6px;
+  box-shadow: 0 2px 4px rgba(46,125,50,0.12);
+}
+
+/* ======================
+   Hero (mobile-first)
+   ====================== */
+.hero{
+  background:
+    linear-gradient(180deg, rgba(46,125,50,0.75), rgba(2,136,209,0.15)),
+    url("assets/hero-placeholder.jpg") center / cover no-repeat;
+  color:var(--branco);
+  text-align:center;
+  padding:3.25rem 1rem;
+}
+.hero .lead{opacity:.95;max-width:60ch;margin:0.5rem auto 1rem}
+.hero-actions{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;margin-top:.5rem}
+.btn-primary{
+  background:var(--destaque);color:var(--branco);padding:.7rem 1.25rem;border-radius:8px;font-weight:700;text-decoration:none;
+}
+.btn-outline{
+  background:transparent;border:2px solid rgba(255,255,255,0.18);color:var(--branco);padding:.6rem 1rem;border-radius:8px;text-decoration:none;font-weight:600;
+}
+
+/* ======================
+   Services grid (cards)
+   ====================== */
+.services{padding:2rem 0}
+.services h2{ text-align:center;color:var(--primaria);margin-bottom:1rem}
+
+.cards-grid{
+  display:grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap:1rem;
+  align-items:stretch;
+}
+
+/* Card base */
+.card{
+  background:var(--branco);
+  border:1px solid #E6E6E6;
+  padding:1.25rem;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 2px 6px rgba(0,0,0,0.06);
+  transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  min-height:130px;
+}
+.card:hover,
+.card:focus-within{
+  transform: translateY(-6px);
+  box-shadow:0 8px 22px rgba(0,0,0,0.08);
+  background: linear-gradient(180deg, #F1FFF3, #FFFFFF);
+}
+.card .card-icon{ display:inline-block; color:var(--destaque); margin-bottom:.6rem; }
+.card h3{ font-size:1rem; color:var(--primaria); margin:0; line-height:1.2; }
+
+/* ======================
+   About / contact / cta
+   ====================== */
+.about, .contact, .cta{ padding:2rem 0; background:transparent }
+.about h2, .contact h2, .cta h2{ color:var(--primaria); margin-bottom:.5rem }
+
+/* contact form */
+.contact-form{ display:flex; flex-direction:column; gap:.6rem; max-width:560px; margin-top:1rem }
+.contact-form label{ font-weight:600 }
+.contact-form input, .contact-form textarea{
+  padding:.6rem .75rem; border:1px solid #DCDCDC; border-radius:6px; font-size:1rem;
+}
+.contact-form button{ align-self:flex-start; margin-top:.5rem; background:var(--destaque); color:var(--branco); padding:.6rem 1rem; border-radius:8px; border:none; font-weight:700; }
+
+/* CTA doação */
+.cta{ background: linear-gradient(90deg, rgba(46,125,50,0.96), rgba(2,136,209,0.92)); color:var(--branco); text-align:center; padding:2rem 1rem; border-radius:6px; margin:1.25rem 0; }
+.btn-donate-cta{ display:inline-block; background:var(--branco); color:var(--primaria); padding:.75rem 1.25rem; border-radius:8px; font-weight:700; text-decoration:none; }
+
+/* ======================
+   Footer
+   ====================== */
+.site-footer{ background:#111; color:var(--branco); padding:1rem 0; margin-top:1.5rem }
+.footer-inner{ display:flex; gap:1rem; align-items:center; justify-content:space-between; flex-wrap:wrap }
+
+/* ======================
+   Responsividade — breakpoints (mobile-first)
+   >= 640px (tablet), >= 900px (laptop), >=1200px (desktop)
+   ====================== */
+@media (min-width: 640px){
+  .cards-grid{ grid-template-columns: repeat(2, 1fr); }
+  .header-inner{ padding:1rem 0; }
+  .hero{ padding:4rem 1rem; }
+}
+
+@media (min-width: 900px){
+  .cards-grid{ grid-template-columns: repeat(3, 1fr); gap:1.25rem; }
+  .container{ width:calc(100% - 4rem); }
+  .hero{ padding:5rem 1rem; }
+  .hero h1{ font-size:2.25rem; }
+}
+
+@media (min-width: 1200px){
+  .cards-grid{ grid-template-columns: repeat(4, 1fr); gap:1.5rem; }
+  .header-inner{ padding:1.25rem 0; }
+  .hero{ padding:6rem 1rem; }
+  .hero h1{ font-size:2.6rem; }
+}
