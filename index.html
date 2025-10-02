@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Serviços e Informações — Recriação</title>
+
+  <!-- Fonte permitida -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Skip link -->
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <!-- Header / Navegação principal -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="https://www.gov.br/planalto/pt-br/conheca-a-presidencia/biblioteca-da-pr/simbolos-nacionais/brasao-da-republica/brasaooficialcolorido.png" alt="Logotipo — Serviços do Brasil" class="logo" width="120" height="40">
+        <span class="visually-hidden">Serviços e Informações do Brasil</span>
+      </div>
+
+      <nav class="site-nav" role="navigation" aria-label="Menu principal">
+        <ul>
+          <li><a href="#inicio" aria-current="page">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#doe" class="btn-donate">Doe</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main id="main" role="main">
+    <!-- Hero -->
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title">Serviços e informações do Brasil — alcance rápido</h1>
+        <p class="lead">Encontre serviços públicos, informações por área e canais de atendimento. Tudo em um só lugar.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#servicos">Ver serviços</a>
+          <a class="btn-outline" href="#sobre">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid de cards (estilo GOV.BR) -->
+    <section id="servicos" class="services" aria-labelledby="servicos-title">
+      <div class="container">
+        <h2 id="servicos-title">Áreas de serviço</h2>
+
+        <div class="cards-grid" role="list">
+          <!-- Repetir cards — cada card é um artigo -->
+          <article class="card" role="listitem">
+            <span class="card-icon" aria-hidden="true">
+              <!-- ícone SVG simples -->
+               <img src="https://i.pinimg.com/474x/60/2c/e0/602ce041eca7ffa73ccf7e8eab72aeef.jpg" alt="agricultura" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M7 12h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h3>Agricultura e Pecuária</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <span class="card-icon" aria-hidden="true">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0CtU3gOtRfjm6S5APwChZI2SCepmuZ28e4A&s" alt="Assistência-social" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+                <circle cx="12" cy="8" r="3" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M5 21c1-4 4-6 7-6s6 2 7 6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h3>Assistência Social</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <span class="card-icon" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M3 12h18" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                <path d="M6 7h12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                <path d="M6 17h12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h3>Ciência e Tecnologia</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <span class="card-icon" aria-hidden="true">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREyH3R-uvOL69CdLTh3AlEZ93dA3BiROLTKw&s" alt="Comunicação-e-transparencia" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M6 12h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M12 6v12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h3>Comunicação e Transparência</h3>
+          </article>
+
+          <!-- Mais cards (total 16) -->
+          <article class="card" role="listitem">
+            <img src="https://i.pinimg.com/736x/7a/39/c7/7a39c7c60b0fc2359146db7a590f77ea.jpg" alt="cultura-arte-e-esporte" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+           <h3>Cultura, Artes e Esportes</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="https://static.vecteezy.com/ti/vetor-gratis/t2/2103777-icone-de-glifo-preto-com-as-duas-maos-segurando-algo-vetor.jpg" alt="defesa-civiil" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+            <h3>Defesa Civil</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="https://static.vecteezy.com/ti/vetor-gratis/t1/4641103-chapeu-icone-icone-isolado-no-fundo-branco-ilustracao-vetor.jpg" alt="Educação-pesquisa" class="logo" width="48" height="48" fill="none"><circle cx="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+            <h3>Educação e Pesquisa</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/583708-loja-online-icone-vector-gratis-vetor.jpg" alt="empresa-industria-e-comercio" class="logo" width="48" height="48" fill="none"><circle cx="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+            <h3>Empresa, Indústria e Comércio</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="https://e7.pngegg.com/pngimages/950/279/png-clipart-electricity-electric-power-electrical-energy-computer-icons-power-socket-angle-electronics-thumbnail.png" alt="energia" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+            <h3>Energia e Combustíveis</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="https://png.pngtree.com/png-clipart/20190613/original/pngtree-finance-logo-icon-design-template-vector-png-image_3556407.jpg" alt="finanças" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+            <h3>Finanças e Gestão Pública</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="https://thumbs.dreamstime.com/b/balança-de-juízo-justiça-em-direito-libra-ilustração-do-ícone-vetor-plano-símbolo-preto-simples-sobre-fundo-branco-modelo-265930085.jpg" alt="justiça-seguranca" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+            <h3>Justiça e Segurança</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="https://cdn-icons-png.flaticon.com/512/984/984548.png" alt="meio-ambiente" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+            <h3>Meio Ambiente e Clima</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="https://www.curitiba.pr.leg.br/atividade-parlamentar/comissoes-permanentes/logos-das-comissoes/saude.png/image" alt="saude-e-vigilancia" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+            <h3>Saúde e Vigilância</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25380.png" alt="trabalho-e-previdencia" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+            <h3>Trabalho e Previdência</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="https://static.vecteezy.com/ti/vetor-gratis/t2/9971699-curva-estrada-icone-para-design-grafico-logo-website-social-media-mobile-app-ui-vetor.jpg" alt="Infraestrutura-e-transportes" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+            <h3>Infraestrutura e Transportes</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTORFSNEKK0T98O_luh3BNADAsyCpoxRxGCNQ&s" alt="saude-e-vigilancia" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+            <h3>Viagens e Turismo</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Sobre -->
+    <section id="sobre" class="about" aria-labelledby="sobre-title">
+      <div class="container">
+        <h2 id="sobre-title">Sobre este portal</h2>
+        <p>Este protótipo recria a home de um portal público, priorizando acessibilidade, semântica e responsividade usando apenas HTML e CSS.</p>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <aside id="contato" class="contact" aria-labelledby="contato-title">
+      <div class="container">
+        <h2 id="contato-title">Fale conosco</h2>
+        <p>Informações de contato e atendimento.</p>
+
+        <form action="#" method="post" class="contact-form" novalidate>
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" required>
+
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+          <button type="submit" class="btn-primary">Enviar</button>
+        </form>
+      </div>
+    </aside>
+
+    <!-- CTA Doação -->
+    <section id="doe" class="cta" aria-labelledby="doe-title">
+      <div class="container">
+        <h2 id="doe-title">Contribua com nossos projetos</h2>
+        <p>Ajude a ampliar o alcance das ações e políticas públicas.</p>
+        <a class="btn-donate-cta" href="#">Faça sua doação</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>&copy; 2025 — Portal Exemplo. Todos os direitos reservados.</p>
+      <nav aria-label="Navegação de rodapé">
+      </nav>
+    </div>
+  </footer>
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Serviços e Informações — Recriação</title>
+
+  <!-- Fonte permitida -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Skip link -->
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <!-- Header / Navegação principal -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="https://www.gov.br/planalto/pt-br/conheca-a-presidencia/biblioteca-da-pr/simbolos-nacionais/brasao-da-republica/brasaooficialcolorido.png" alt="Logotipo — Serviços do Brasil" class="logo" width="120" height="40">
+        <span class="visually-hidden">Serviços e Informações do Brasil</span>
+      </div>
+
+      <nav class="site-nav" role="navigation" aria-label="Menu principal">
+        <ul>
+          <li><a href="#inicio" aria-current="page">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#doe" class="btn-donate">Doe</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main id="main" role="main">
+    <!-- Hero -->
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title">Serviços e informações do Brasil — alcance rápido</h1>
+        <p class="lead">Encontre serviços públicos, informações por área e canais de atendimento. Tudo em um só lugar.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#servicos">Ver serviços</a>
+          <a class="btn-outline" href="#sobre">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid de cards (estilo GOV.BR) -->
+    <section id="servicos" class="services" aria-labelledby="servicos-title">
+      <div class="container">
+        <h2 id="servicos-title">Áreas de serviço</h2>
+
+        <div class="cards-grid" role="list">
+          <!-- Repetir cards — cada card é um artigo -->
+          <article class="card" role="listitem">
+            <span class="card-icon" aria-hidden="true">
+              <!-- ícone SVG simples -->
+               <img src="https://i.pinimg.com/474x/60/2c/e0/602ce041eca7ffa73ccf7e8eab72aeef.jpg" alt="agricultura" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M7 12h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h3>Agricultura e Pecuária</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <span class="card-icon" aria-hidden="true">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0CtU3gOtRfjm6S5APwChZI2SCepmuZ28e4A&s" alt="Assistência-social" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+                <circle cx="12" cy="8" r="3" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M5 21c1-4 4-6 7-6s6 2 7 6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h3>Assistência Social</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <span class="card-icon" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M3 12h18" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                <path d="M6 7h12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                <path d="M6 17h12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h3>Ciência e Tecnologia</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <span class="card-icon" aria-hidden="true">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREyH3R-uvOL69CdLTh3AlEZ93dA3BiROLTKw&s" alt="Comunicação-e-transparencia" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M6 12h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M12 6v12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h3>Comunicação e Transparência</h3>
+          </article>
+
+          <!-- Mais cards (total 16) -->
+          <article class="card" role="listitem">
+            <img src="https://i.pinimg.com/736x/7a/39/c7/7a39c7c60b0fc2359146db7a590f77ea.jpg" alt="cultura-arte-e-esporte" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+           <h3>Cultura, Artes e Esportes</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="https://static.vecteezy.com/ti/vetor-gratis/t2/2103777-icone-de-glifo-preto-com-as-duas-maos-segurando-algo-vetor.jpg" alt="defesa-civiil" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+            <h3>Defesa Civil</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="https://static.vecteezy.com/ti/vetor-gratis/t1/4641103-chapeu-icone-icone-isolado-no-fundo-branco-ilustracao-vetor.jpg" alt="Educação-pesquisa" class="logo" width="48" height="48" fill="none"><circle cx="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+            <h3>Educação e Pesquisa</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/583708-loja-online-icone-vector-gratis-vetor.jpg" alt="empresa-industria-e-comercio" class="logo" width="48" height="48" fill="none"><circle cx="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+            <h3>Empresa, Indústria e Comércio</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="https://e7.pngegg.com/pngimages/950/279/png-clipart-electricity-electric-power-electrical-energy-computer-icons-power-socket-angle-electronics-thumbnail.png" alt="energia" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+            <h3>Energia e Combustíveis</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="https://png.pngtree.com/png-clipart/20190613/original/pngtree-finance-logo-icon-design-template-vector-png-image_3556407.jpg" alt="finanças" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+            <h3>Finanças e Gestão Pública</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="https://thumbs.dreamstime.com/b/balança-de-juízo-justiça-em-direito-libra-ilustração-do-ícone-vetor-plano-símbolo-preto-simples-sobre-fundo-branco-modelo-265930085.jpg" alt="justiça-seguranca" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+            <h3>Justiça e Segurança</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="https://cdn-icons-png.flaticon.com/512/984/984548.png" alt="meio-ambiente" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+            <h3>Meio Ambiente e Clima</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="https://www.curitiba.pr.leg.br/atividade-parlamentar/comissoes-permanentes/logos-das-comissoes/saude.png/image" alt="saude-e-vigilancia" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+            <h3>Saúde e Vigilância</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25380.png" alt="trabalho-e-previdencia" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+            <h3>Trabalho e Previdência</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="https://static.vecteezy.com/ti/vetor-gratis/t2/9971699-curva-estrada-icone-para-design-grafico-logo-website-social-media-mobile-app-ui-vetor.jpg" alt="Infraestrutura-e-transportes" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+            <h3>Infraestrutura e Transportes</h3>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTORFSNEKK0T98O_luh3BNADAsyCpoxRxGCNQ&s" alt="saude-e-vigilancia" class="logo" width="48" height="48" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+            <h3>Viagens e Turismo</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Sobre -->
+    <section id="sobre" class="about" aria-labelledby="sobre-title">
+      <div class="container">
+        <h2 id="sobre-title">Sobre este portal</h2>
+        <p>Este protótipo recria a home de um portal público, priorizando acessibilidade, semântica e responsividade usando apenas HTML e CSS.</p>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <aside id="contato" class="contact" aria-labelledby="contato-title">
+      <div class="container">
+        <h2 id="contato-title">Fale conosco</h2>
+        <p>Informações de contato e atendimento.</p>
+
+        <form action="#" method="post" class="contact-form" novalidate>
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" required>
+
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+          <button type="submit" class="btn-primary">Enviar</button>
+        </form>
+      </div>
+    </aside>
+
+    <!-- CTA Doação -->
+    <section id="doe" class="cta" aria-labelledby="doe-title">
+      <div class="container">
+        <h2 id="doe-title">Contribua com nossos projetos</h2>
+        <p>Ajude a ampliar o alcance das ações e políticas públicas.</p>
+        <a class="btn-donate-cta" href="#">Faça sua doação</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>&copy; 2025 — Portal Exemplo. Todos os direitos reservados.</p>
+      <nav aria-label="Navegação de rodapé">
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
